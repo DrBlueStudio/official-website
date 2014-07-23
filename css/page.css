@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*一般性設定*/
+body, td, th {
+	font-size: 16px;
+	color: #666666;
+	font-family:Verdana, Geneva, sans-serif;
+	line-height:1.2em;
+}
+body {
+	background-color: #FFFFFF;
+	margin: 0;
+}
+.clear {
+	clear:both;
+}
+.relative {
+	position:relative;
+}
+/*整頁版面構成*/
+#page-wrapper {
+	max-width:1004px;
+	margin:0 auto;
+	width: 100%;
+}
+#page-wrapper-padding {
+	padding:0 5px;
+}
+#page-top-guide .button_contact {
+	top:0;
+	float: right;
+	position: relative;
+}
+#page-top-guide .button_contact .on {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:9;
+}
+#page-top-guide .button_contact .on img {
+	border:0;
+}
+#footer {
+	margin-top:20px;
+	padding:5px;
+	border-top:1px #000 solid;
+}
+#footer a {
+	text-decoration:underline;
+	}
+#footer a:hover {
+	background-color:efefef;
+	border-radius: 3px;
+	-o-border-radius: 3px;
+	-icab-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	}
+#footer p{
+	font-size:80%;
+	line-height:2em;
+	letter-spacing:.05em;
+	padding:0;
+	}
+#footer span {
+	padding: 0 3px;
+	border:#999 1px solid;
+	border-radius: 3px;
+	-o-border-radius: 3px;
+	-icab-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
+}
+/*logo*/
+#page-top-guide-wrapper {
+	width:100%;
+}
+#page-top-guide {
+}
+#page-top-guide_padding {
+	margin-left:0px;
+}
+#page-top-guide_padding .button {
+	float:left;
+	margin-right:10px;
+	position:relative;
+}
+#page-top-guide_padding .button div {
+	display:none;
+	}
+#page-top-guide_padding .button .on {
+	position:absolute;
+	left:0;
+	top:0;
+	display:inline-block;
+}
+#page-top-guide_padding .button .on a{
+	text-decoration:none;
+	margin:0;
+	padding:0;
+	border:0;}
+#page-top-guide_padding .button .on a img {
+	border:0;
+}
+
+#page-menu-horizontal {
+	height:52px;
+}
+#page-menu-horizontal a{
+	display:block;
+	}
+#page-menu-horizontal img {
+	border:0;
+}
+
+/*下半頁區塊*/
+#page-content-wrapper {
+	padding-top: 60px;
+}
+#anncallout {
+	height: 52px;
+	float: left;
+}
+#anncallout img {
+	border:0;
+}
+#callout1 {
+	width: 200px;
+	height: 52px;
+	float: left;
+}
+#callout2 {
+	width: 80px;
+	height: 52px;
+	float: left;
+}
+a:link {
+	text-decoration: none;
+	color: #666;
+	border: 0;
+	display:inline-block;
+}
+a:visited {
+	text-decoration: none;
+	color: #666;
+}
+a:hover {
+	text-decoration: none;
+	color: #000;
+}
+a:active {
+	text-decoration: none;
+	color: #000;
+}

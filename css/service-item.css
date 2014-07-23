@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1 {
+	color:#444;
+	font-size: 150%;
+	font-weight:bold;
+	text-shadow: 0 0 5px #ccc;
+	padding-bottom:1em;
+	border-bottom: #ccc 2px dotted;
+	margin-bottom: 30px;
+}
+h2 {
+	color:#217082;
+	font-size: 120%;
+	font-weight:bold;
+	text-shadow: 0 0 5px #ccc;
+	margin: 40px 0 20px 0;
+}
+h2 small {
+	color:#444;
+	font-size:80%;
+	font-weight:100;
+	text-shadow: 0 0 5px #ccc;
+	letter-spacing:.1em;
+	margin-left:10px;
+	}
+h3 {
+	color:#444;
+	font-size: 100%;
+	font-weight:bold;
+	text-shadow: 0 0 5px #ccc;
+}
+small {
+	font-size:80%;
+	text-shadow: 0 0 5px #ccc;
+	letter-spacing:.2em;
+	}
+big {
+	font-size:100%;
+	font-weight:bold;
+	padding: 3px 10px;
+	background-color:#efefef;
+	margin-right:10px;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-icab-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+/*	box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px;*/
+	}
+p {
+	line-height:1.7em;
+	letter-spacing:.1em;
+	}
+p.ps {
+	font-size:80%;
+	line-height:1.5em;
+	letter-spacing:0.1em;
+	padding:3px 8px;
+	margin: 10px 10px 10px 10px;
+	color:#333;
+	}
+.service-item-guide {
+	float: left;
+	margin-right: 20px;
+	position:relative;
+	}
+.service-item-guide a{
+	padding: 8px 10px 3px 10px;
+	border:#ccc solid;
+	border-width:1px 1px 0 1px;
+	border-radius: 9px 9px 0 0;
+	-o-border-radius: 9px 9px 0 0;
+	-icab-border-radius: 9px 9px 0 0;
+	-khtml-border-radius: 9px 9px 0 0;
+	-moz-border-radius: 9px 9px 0 0;
+	-webkit-border-radius: 9px 9px 0 0;
+}
+.service-item-guide a:hover{
+	color:#000;
+	border-color:#000;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px; 
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px; 
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px; 
+}
+/*下半頁分割區塊*/
+#page-menu-vertical-wrapper {
+	float:left;
+	position:relative;
+	width:290px;
+	padding-top: 10px;
+}
+#page-content-area {
+	margin-left: 300px;
+	max-width: 700px;
+	padding: 10px 50px 50px 0;
+}
+#page-content-area a, #page-content-area a:hover{
+	border-bottom:2px dotted #d9e021;
+	color:#333;
+	padding:3px 5px 1px 5px;
+	}
+#page-menu-vertical-wrapper .menu {
+	float:left;
+	height:2em;
+	width:230px;
+	padding:10px 0 0 0;
+	border:1px dotted #ccc;
+	border-width: 1px 0 0 0;
+	text-align:right;
+}
+#page-menu-vertical-wrapper .menu span{
+	font-size:70%;
+	padding:5px;
+	}

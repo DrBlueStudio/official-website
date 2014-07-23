@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1 {
+	color:#444;
+	font-size: 150%;
+	font-weight:bold;
+	text-shadow: 0 0 5px #ccc;
+	padding-bottom:1em;
+	border-bottom: #ccc 2px dotted;
+	margin-bottom: 30px;
+}
+h2 {
+	color:#217082;
+	font-size: 120%;
+	font-weight:bold;
+	text-shadow: 0 0 5px #ccc;
+	margin: 40px 0 20px 0;
+}
+h2 small {
+	color:#444;
+	font-size:80%;
+	font-weight:100;
+	text-shadow: 0 0 5px #ccc;
+	letter-spacing:.1em;
+	margin-left:10px;
+	}
+h3 {
+	color:#444;
+	font-size: 100%;
+	font-weight:bold;
+	text-shadow: 0 0 5px #ccc;
+}
+small {
+	font-size:80%;
+	text-shadow: 0 0 5px #ccc;
+	letter-spacing:.2em;
+	}
+p {
+	line-height:1.7em;
+	letter-spacing:.1em;
+	}
+p.ps {
+	font-size:80%;
+	line-height:1.5em;
+	letter-spacing:0.1em;
+	padding:3px 8px;
+	margin: 10px 10px 10px 10px;
+	color:#333;
+	}
+.picture {
+	width:100%;
+	background-color:#fff;
+	border-radius: 9px;
+	-o-border-radius: 9px;
+	-icab-border-radius: 9px;
+	-khtml-border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	}
+.float-icon {
+	float:left;
+/*	box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+*/	}
+big {
+	font-size:100%;
+	font-weight:bold;
+	padding: 3px 10px;
+	background-color:#efefef;
+	border:1px #ccc solid;
+	margin-right:10px;
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-icab-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+/*	box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;*/
+	}
+/*下半頁分割區塊*/
+#page-menu-vertical-wrapper {
+	float:left;
+	position:relative;
+	width:290px;
+	padding-top: 10px;
+}
+#page-content-area {
+	margin-left: 300px;
+	max-width: 700px;
+	padding: 10px 50px 50px 0;
+}
+
+/*了解我專用的*/
+#about-menu-1 {
+	padding:30px 0 0 0;
+	width:200px;
+	height:400px;
+	background:url(../images/about_menu_bg.png) no-repeat left top;
+	text-align: right;
+	}
+.about-button {
+	position:relative;
+	text-align: right;
+	color:#000;
+	font-weight:bold;
+	height:2.5em;
+}
+.about-button a{
+	color:#000;
+	background-color: rgba(256,256,256,0);
+
+/*	text-shadow: 0 0 10px #fff;*/
+	padding:5px 10px 5px 10px;
+	border-radius: 9px 0 0 9px;
+	-o-border-radius: 9px 0 0 9px;
+	-icab-border-radius: 9px 0 0 9px;
+	-khtml-border-radius: 9px 0 0 9px;
+	-moz-border-radius: 9px 0 0 9px;
+	-webkit-border-radius: 9px 0 0 9px;
+	}
+.about-button a:hover{
+	color:#333;
+	background-color:#FFF;
+    box-shadow: rgba(0, 0, 0, 0.5) -3px 0 5px; 
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) -3px 0 5px; 
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) -3px 0 5px; 
+}
+#about-menu-1 .menu-arrow {
+	position:relative;
+	text-align: right;
+	color:#333;
+	font-weight:bold;
+	height:2.5em;
+}
+#about-menu-1 .menu-arrow a {
+	color:#333;
+	background-color:#FFF;
+	padding:5px 10px 5px 10px;
+	border-radius: 9px 0 0 9px;
+	-o-border-radius: 9px 0 0 9px;
+	-icab-border-radius: 9px 0 0 9px;
+	-khtml-border-radius: 9px 0 0 9px;
+	-moz-border-radius: 9px 0 0 9px;
+	-webkit-border-radius: 9px 0 0 9px;
+	}
+#about-content ul {
+	list-style:none;
+	margin:0;
+	padding:0;}
+#about-content a{
+	border-bottom:2px dotted #d9e021;
+	color:#333;
+	padding:3px 5px 1px 5px;
+	border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	-icab-border-radius: 5px 5px 0 0;
+	-khtml-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	}
+#about-content a:hover{
+	border:2px solid #d9e021;
+}

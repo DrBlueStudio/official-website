@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+.service-item-guide .on {
+	position:absolute;
+	left:-3px;
+	top:-3px;
+	z-index:9;
+	width:100%;
+	height:1.2em;
+	padding: 8px 0 5px 0;
+
+	border:#00a0c6 solid;
+	border-width:3px 3px 0 3px;
+	border-radius: 9px 9px 0 0;
+	-o-border-radius: 9px 9px 0 0;
+	-icab-border-radius: 9px 9px 0 0;
+	-khtml-border-radius: 9px 9px 0 0;
+	-moz-border-radius: 9px 9px 0 0;
+	-webkit-border-radius: 9px 9px 0 0;
+}
+
+/*工作流程專用的*/
+.process-item-guide-wrapper {
+	height:52px;
+}
+.process-item-guide {
+	float: left;
+	margin-right: 0;
+	position: relative;
+	line-height:1.2em;
+	}
+.process-item-guide-arrow {
+	float: left;
+	position:relative;
+	padding: 8px 0 8px 0;
+	line-height:1.2em;
+	height:1.2em;
+	width:2em;
+	background:url(../images/process-arrow.png) no-repeat right center #efefef;
+	border-top:1px #ccc solid;
+	border-bottom:1px #ccc solid;
+/*	border-image: url(../images/process-arrow.png) 0 30 0 0 stretch stertch;
+	-webkit-border-image: url(../images/process-arrow.png) 0 30 0 0 stretch stertch;
+	-moz-border-image: url(../images/process-arrow.png) 0 30 0 0 stretch stertch;*/
+	}
+.process-item-guide a{
+	display:block;
+	padding: 8px 10px 8px 10px;
+	border:#ccc solid;
+	border-width:1px 1px 1px 0;
+}
+.process-item-guide a:hover{
+	border-top:#000 solid 1px;
+	border-bottom:#000 solid 1px;
+	border-right:#ccc solid 1px;
+	border-left:0;
+/*	text-shadow: 0 0 10px #ccc;*/
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px; 
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px; 
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px; 
+}
+.process-item-guide .menu-arrow {
+	position:absolute;
+	left:0px;
+	top:-3px;
+	z-index:9;
+	width:100%;
+	height:100%;
+	border:#00a0c6 solid;
+	border-width:3px 0 3px 0;
+
+	box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px; 
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px; 
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px; 
+}
+
+#process-guide-list {
+	margin:10px 0 0 0;
+	padding:5px 10px 10px 0;
+	width:210px;
+	background:url(../images/process_guide-list_bg.png);
+	text-align: left;
+	}
+#process-guide-list li {
+	list-style-image: url(../images/process_guide-list_icon.png);	
+}
