@@ -1,0 +1,23 @@
+extends _gallery
+
+block subtitle
+  block minititle
+  |  | 醫學繪圖
+
+block wrapper
+  //-- $.getJSON("json/portfolio.json").success(function(data) {
+  //--   console.log(data)});
+  nav.vertical.menu.gallery
+    a.item(href="gallery-medical_illustration-head.html")#head 頭頸部
+    a.item(href="gallery-medical_illustration-trunk.html")#trunk 軀幹部
+    a.item(href="gallery-medical_illustration-limb.html")#limb 四肢
+    a.item(href="gallery-medical_illustration-other.html")#other 其他部位
+  block category
+
+block subscript
+  script.
+    $(".horizontal.menu #medical_illustration").addClass("active");
+    $("#navbar .services").attr("href","service-medical_illustration-whatis.html");
+    $("#navbar .processes").attr("href","process-medical_illustration-prepare.html");
+  block miniscript
+

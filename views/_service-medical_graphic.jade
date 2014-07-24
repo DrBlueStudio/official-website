@@ -1,0 +1,23 @@
+extends _services
+
+block subtitle
+  block minititle
+  |  | 醫學平面設計
+
+block wrapper
+  nav.vertical.menu.services
+    a.item(href="service-medical_graphic-whatis.html")#whatis 什麼是醫學平面設計
+    a.item(href="service-medical_graphic-produce.html")#produce 設計稿如何製作
+    a.item(href="service-medical_graphic-print.html")#print 設計稿如何變成印刷成品
+    a.item(href="service-medical_graphic-indication.html")#indication 哪些人需要我們的服務
+    a.item(href="service-medical_graphic-order.html")#order 如何訂製醫學平面設計作品
+    a.item(href="service-medical_graphic-mainten.html")#mainten 設計品的後續維護
+  article.content.services
+    block article
+
+block subscript
+  script.
+    $(".horizontal.menu #medical_graphic").addClass("active");
+    $("#navbar .prices").attr("href","price-medical_graphic-download.html");
+    $("#navbar .processes").attr("href","process-medical_graphic-prepare.html");
+  block miniscript

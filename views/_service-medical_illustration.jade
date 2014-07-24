@@ -1,0 +1,21 @@
+extends _services
+
+block subtitle
+  block minititle
+  |  | 醫學繪圖
+
+block wrapper
+  nav.vertical.menu.services
+    a.item(href="service-medical_illustration-whatis.html")#whatis 什麼是醫學繪圖
+    a.item(href="service-medical_illustration-produce.html")#produce 醫學繪圖如何製作
+    a.item(href="service-medical_illustration-indication.html")#indication 哪些人需要我們的服務
+    a.item(href="service-medical_illustration-order.html")#order 如何訂製或購買醫學繪圖
+  article.content.services
+    block article
+
+block subscript
+  script.
+    $(".horizontal.menu #medical_illustration").addClass("active");
+    $("#navbar .prices").attr("href","price-medical_illustration-download.html");
+    $("#navbar .processes").attr("href","process-medical_illustration-prepare.html");
+  block miniscript

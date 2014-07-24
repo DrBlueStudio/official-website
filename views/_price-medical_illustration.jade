@@ -1,0 +1,21 @@
+extends _prices
+
+block subtitle
+  block minititle
+  |  | 醫學繪圖
+
+block wrapper
+  nav.vertical.menu.prices
+    a.item(href="price-medical_illustration-download.html")#download 下載價格表
+    a.item(href="price-medical_illustration-price.html")#price 定價依據：圖片複雜度
+    a.item(href="price-medical_illustration-license.html")#license 收費依據：圖片授權方式
+    a.item(href="price-medical_illustration-payment.html")#payment 如何估價與付款
+  article.content.prices
+    block article
+
+block subscript
+  script.
+    $(".horizontal.menu #medical_illustration").addClass("active");
+    $("#navbar .services").attr("href","service-medical_illustration-whatis.html");
+    $("#navbar .processes").attr("href","process-medical_illustration-prepare.html");
+  block miniscript

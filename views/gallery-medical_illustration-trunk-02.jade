@@ -1,0 +1,32 @@
+extends _gallery-medical_illustration-trunk
+
+block article
+  .column
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 醫學繪圖中型
+      img(src="img/gallery/illustration/trunk/02-01.jpg")
+      .ui.bottom.attached.label 乳房的構造
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 醫學系列圖小型
+      img(src="img/gallery/illustration/trunk/02-02.jpg")
+      .ui.bottom.attached.label 義乳置放乳腺下
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 醫學系列圖小型
+      img(src="img/gallery/illustration/trunk/02-03.jpg")
+      .ui.bottom.attached.label 義乳置放筋膜下
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 醫學系列圖小型
+      img(src="img/gallery/illustration/trunk/02-04.jpg")
+      .ui.bottom.attached.label 義乳置放胸肌下
+  .column
+    h1 隆乳手術解剖位置說明
+    p 使用場合：門診病人衛教
+    p 學術分類：整形外科
+    //-.ui.celled.list
+      .item
+        i.icon.checkmark.checked
+        | parotid salivary gland
+
+block microscript
+  script.
+    $(".thumbnail.menu #02").addClass("active");

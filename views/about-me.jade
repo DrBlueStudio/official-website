@@ -1,0 +1,22 @@
+extends _about
+
+block subtitle
+  | 關於我
+
+block article
+  h1 關於我
+  .photo
+    img(src='/img/about/photo.png', alt='photo')
+  .description
+    h2
+      | 藍一婷
+      span.subtitle a.k.a. ETBlue
+    .ui.list
+      .item 學歷：牙醫學士
+      .item 經歷：中華民國牙醫師，三軍總醫院口腔顎面外科住院醫師
+      .item 現職：醫學繪圖插畫家，零時政府社群貢獻者
+
+block script
+  script.
+    $("#navbar .about").addClass("active");
+    $(".vertical.menu #me").addClass("active");

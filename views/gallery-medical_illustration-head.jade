@@ -1,0 +1,28 @@
+extends _gallery-medical_illustration
+
+block minititle
+  | 頭頸部
+
+block category
+  nav.thumbnail.menu(ng-controller="portfolio")
+    a.item(ng-repeat="set in gallery.data.head",ng-href="#{{set.id}}",id="{{set.id}}")
+      img(ng-src="/img/gallery/illustration/head/{{set.thumbnail}}")
+  article.portfolio(ng-controller="portfolio")
+    .ui.two.column.stackable.grid(ng-repeat="set in gallery.data.head")
+      .column
+        .picture(ng-repeat="picture in set.pictures")
+          .ui.label.ribbon(ng-class="picture.label") {{picture.spec}}
+          img.rounded.ui.image(ng-src="/img/gallery/illustration/head/{{picture.url}}")
+      .column
+        h1 {{set.title}}
+        p 使用場合：{{set.usage}}
+        p 學術分類：{{set.subject}}
+        .ui.celled.list
+          .item(ng-repeat="item in set.content")
+            i.icon.checkmark.checked
+            | {{item}}
+
+block miniscript
+  script.
+    $(".vertical.menu #head").addClass("active");
+

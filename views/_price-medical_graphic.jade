@@ -1,0 +1,21 @@
+extends _prices
+
+block subtitle
+  block minititle
+  |  | 醫學平面設計
+
+block wrapper
+  nav.vertical.menu.prices
+    a.item(href="price-medical_graphic-download.html")#download 下載價格表
+    a.item(href="price-medical_graphic-price.html")#price 設計費依據：稿件細緻度
+    a.item(href="price-medical_graphic-print.html")#print 印刷費依據：印刷公司報價
+    a.item(href="price-medical_graphic-payment.html")#payment 如何估價與支付訂金
+  article.content.prices
+    block article
+
+block subscript
+  script.
+    $(".horizontal.menu #medical_graphic").addClass("active");
+    $("#navbar .services").attr("href","service-medical_graphic-whatis.html");
+    $("#navbar .processes").attr("href","process-medical_graphic-prepare.html");
+  block miniscript

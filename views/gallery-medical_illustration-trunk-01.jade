@@ -1,0 +1,28 @@
+extends _gallery-medical_illustration-trunk
+
+block article
+  .column
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 醫學繪圖中型
+      img(src="img/gallery/illustration/trunk/01-01.jpg")
+      .ui.bottom.attached.label 標準胸部正面外觀
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 醫學系列圖中型
+      img(src="img/gallery/illustration/trunk/01-02.jpg")
+      .ui.bottom.attached.label 乳溝寬度
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 醫學系列圖中型
+      img(src="img/gallery/illustration/trunk/01-03.jpg")
+      .ui.bottom.attached.label 乳溝寬度（穿胸罩時）
+  .column
+    h1 胸部輪廓比例說明
+    p 使用場合：門診病人衛教
+    p 學術分類：整形外科
+    //-.ui.celled.list
+      .item
+        i.icon.checkmark.checked
+        | parotid salivary gland
+
+block microscript
+  script.
+    $(".thumbnail.menu #01").addClass("active");

@@ -1,0 +1,52 @@
+@import compass/css3
+.wrapper
+  .step.menu
+    text-align: center
+    background-color: #fafafa
+    border: 1px #666 solid
+    border-width: 1px 0
+    //+border-radius(0.5rem)
+    //+box-shadow(inset 0 0 1rem rgba(#000,0.2))
+    .item
+      display: inline-block
+      padding: 0.5em 0.8em
+      &.square
+        border: 1px #ccc solid
+        border-width: 0 1px
+        padding-left: 1em
+        background-color: #fff
+        &:first-child
+          padding-left: 0.5em
+        &:hover
+          color: #000
+          //border-top: 1px #000 solid
+          //border-bottom: 1px #000 solid
+          +box-shadow(0 0 0.5rem rgba(#000,0.5),0 1px 0 #000,0 -1px 0 #000)
+        &.active,&.active:hover
+          color: #000
+          //border-top: 3px #00a0c6 solid
+          //border-bottom: 3px #00a0c6 solid
+          +box-shadow(0 3px 0 #00a0c6,0 -3px 0 #00a0c6)
+      &.arrow
+        position: relative
+        background-color: #eee
+        &:after
+          content: ""
+          width: 10px
+          height: 100%
+          position: absolute
+          right: -10px
+          top: 0
+          background: #eee url("/img/process/arrow.png") no-repeat right center
+        //&:after
+          content: ""
+          width: 0
+          height: 0
+          position: absolute
+          right: -1.2em
+          top: 0
+          border-top: 1.2em rgba(#fff,0) solid
+          border-bottom: 1.2em rgba(#fff,0) solid
+          border-left: 1.2em rgba(#eee,1) solid
+  .content
+    margin: 1rem 3rem 0 3rem

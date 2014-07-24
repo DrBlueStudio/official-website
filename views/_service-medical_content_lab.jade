@@ -1,0 +1,30 @@
+extends _services
+
+block subtitle
+  block minititle
+  |  | 實驗計劃
+
+block wrapper
+  nav.vertical.menu.services
+    a.item(href="service-medical_content_lab-why.html")#why 為何要進行實驗計劃
+    a.item(href="service-medical_content_lab-sop.html")#sop 
+      span [計畫]
+      | 臨床作業流程與表單SOP
+    a.item(href="service-medical_content_lab-openoffice.html")#openoffice 
+      span [計畫]
+      | 自由軟體OpenOffice教學
+    a.item(href="service-medical_content_lab-video_edit.html")#video_edit 
+      span [計畫]
+      | 自由剪接軟體教學
+    a.item(href="service-medical_content_lab-programming.html")#programming 
+      span [計畫]
+      | 產業旅遊行程：軟體業
+    a.item(href="service-medical_content_lab-archive.html")#archive 已完成的實驗
+  article.content.services
+    block article
+
+block subscript
+  script.
+    $(".horizontal.menu #medical_content_lab").addClass("active");
+  block miniscript
+

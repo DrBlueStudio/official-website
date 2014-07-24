@@ -1,0 +1,24 @@
+extends _page
+
+block head
+  link(rel="stylesheet",href="css/gallery.css")
+
+block title
+  block subtitle
+  |  | 看作品
+
+block content
+
+  nav.horizontal.menu.gallery
+    a.item(href="gallery-medical_illustration-head.html")#medical_illustration 醫學繪圖
+    a.item(href="gallery-medical_animation-.html")#medical_animation 醫學動畫
+    a.item(href="gallery-medical_graphic-.html")#medical_graphic 醫學平面設計
+
+  .wrapper
+    block wrapper
+
+block script
+  script.
+    $("#navbar .gallery").addClass("active");
+  block subscript
+

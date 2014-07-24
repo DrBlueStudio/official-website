@@ -1,0 +1,21 @@
+extends _prices
+
+block subtitle
+  block minititle
+  |  | 醫學動畫
+
+block wrapper
+  nav.vertical.menu.prices
+    a.item(href="price-medical_animation-download.html")#download 下載價格表
+    a.item(href="price-medical_animation-price.html")#price 定價依據：動畫分鏡複雜度
+    a.item(href="price-medical_animation-license.html")#license 收費依據：圖片授權+動畫製作
+    a.item(href="price-medical_animation-payment.html")#payment 如何估價與付款
+  article.content.prices
+    block article
+
+block subscript
+  script.
+    $(".horizontal.menu #medical_animation").addClass("active");
+    $("#navbar .services").attr("href","service-medical_animation-whatis.html");
+    $("#navbar .processes").attr("href","process-medical_animation-prepare.html");
+  block miniscript

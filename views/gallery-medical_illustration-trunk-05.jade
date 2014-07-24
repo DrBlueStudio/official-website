@@ -1,0 +1,83 @@
+extends _gallery-medical_illustration-trunk
+
+block article
+  .column
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 醫學繪圖中型
+      img(src="img/gallery/illustration/trunk/05-01.jpg")
+      .ui.bottom.attached.label Pancreas Tumor
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 醫學系列圖小型
+      img(src="img/gallery/illustration/trunk/05-02.jpg")
+      .ui.bottom.attached.label Lesion
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 醫學系列圖中型
+      img(src="img/gallery/illustration/trunk/05-03.jpg")
+      .ui.bottom.attached.label Reconstruction 1
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 醫學系列圖中型
+      img(src="img/gallery/illustration/trunk/05-04.jpg")
+      .ui.bottom.attached.label Reconstruction 2
+  .column
+    h1 胰臟腫瘤手術術式說明
+    p 使用場合：醫學論文插圖
+    p 學術分類：一般外科
+    .ui.celled.list
+      .item
+        i.icon.checkmark.checked
+        | liver
+      .item
+        i.icon.checkmark.checked
+        | retractors
+      .item
+        i.icon.checkmark.checked
+        | gallbladder
+      .item
+        i.icon.checkmark.checked
+        | left & right common hepatic duct
+      .item
+        i.icon.checkmark.checked
+        | cystic duct
+      .item
+        i.icon.checkmark.checked
+        | common bild duct
+      .item
+        i.icon.checkmark.checked
+        | stomach
+      .item
+        i.icon.checkmark.checked
+        | duodenum
+      .item
+        i.icon.checkmark.checked
+        | portal vein
+      .item
+        i.icon.checkmark.checked
+        | sup. mesenteric vessels
+      .item
+        i.icon.checkmark.checked
+        | splenic vein
+      .item
+        i.icon.checkmark.checked
+        | pancreas
+      .item
+        i.icon.checkmark.checked
+        | pancreatic duct
+      .item
+        i.icon.checkmark.checked
+        | jejunum (cut)
+      .item
+        i.icon.checkmark.checked
+        | cystic tumor
+      .item
+        i.icon.checkmark.checked
+        | NG tube
+      .item
+        i.icon.checkmark.checked
+        | colon
+      .item
+        i.icon.checkmark.checked
+        | drainage tube
+
+block microscript
+  script.
+    $(".thumbnail.menu #05").addClass("active");

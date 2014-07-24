@@ -1,0 +1,86 @@
+@import compass/css3
+.wrapper
+  .vertical.menu
+    width: 198px
+    height: 286px
+    color: rgba(#fff,0)
+    text-align: center
+    background: url("/img/gallery/off.png")
+    position: absolute
+    .item
+      display: block
+      &:before
+        content: ""
+        background-image: url("/img/gallery/on.png")
+        opacity: 0
+        width: 100%
+        height: 100%
+        position: absolute
+        left: 0
+        top: 0
+      &.active,&.active:hover
+        &:before
+          opacity: 1
+      &:hover
+        &:before
+          opacity: 0.8
+          +transition-duration(0.2s)
+      &#head
+        height: 46px
+        &:before
+          background-position: 0 0
+      &#trunk
+        height: 91px
+        &:before
+          background-position: 0 -46px
+      &#limb
+        height: 118px
+        &:before
+          background-position: 0 -137px
+      &#other
+        height: 31px
+        &:before
+          background-position: 0 -255px
+  .thumbnail.menu
+    text-align: center
+    background-color: #fafafa
+    border: 1px #666 solid
+    border-width: 1px 0
+    margin-left: 13rem
+    height: 3rem
+    .item
+      display: inline-block
+      border: 1px #ccc solid
+      border-width: 0 1px
+      background-color: #fff
+      width: 3rem
+      height: 3rem
+      overflow: hidden
+      &:hover
+        border-color: #000
+        +box-shadow(0 0 0.5rem rgba(#000,0.5))
+      &.active,&.active:hover
+        border-color: #ccc
+        +box-shadow(0 3px 0 #8a73e6,0 -3px 0 #8a73e6)
+      img
+        max-height: 3rem
+  .portfolio
+    margin-left: 13rem
+    padding: 2rem
+    .picture
+      position: relative
+      padding: 0.5rem
+      background-color: #efefef
+      //border: 0.5rem #efefef solid
+      margin-bottom: 1rem
+      .ui.label.ribbon
+        position: absolute
+        z-index: 1
+        left: -1.2rem
+        top: 1rem
+        font-size: 1rem
+      .ui.attached.label
+        background-color: rgba(#000,0.4)
+        color: #fff
+      //img
+        //+box-shadow(0 0 0.5rem rgba(#000,0.5))   

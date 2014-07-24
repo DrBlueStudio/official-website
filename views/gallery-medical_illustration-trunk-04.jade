@@ -1,0 +1,63 @@
+extends _gallery-medical_illustration-trunk
+
+block article
+  .column
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 醫學繪圖中型
+      img(src="img/gallery/illustration/trunk/04-01.jpg")
+      .ui.bottom.attached.label Hepatic Tumor
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 醫學系列圖中型
+      img(src="img/gallery/illustration/trunk/04-02.jpg")
+      .ui.bottom.attached.label Distilled Water
+  .column
+    h1 肝臟腫瘤手術術式說明
+    p 使用場合：醫學論文插圖
+    p 學術分類：一般外科
+    .ui.celled.list
+      .item
+        i.icon.checkmark.checked
+        | inferior vena cava
+      .item
+        i.icon.checkmark.checked
+        | liver (cut
+      .item
+        i.icon.checkmark.checked
+        | tumor cells of liver
+      .item
+        i.icon.checkmark.checked
+        | stomach
+      .item
+        i.icon.checkmark.checked
+        | right and left kidney
+      .item
+        i.icon.checkmark.checked
+        | suprarenal glands
+      .item
+        i.icon.checkmark.checked
+        | common bile duct
+      .item
+        i.icon.checkmark.checked
+        | pancreas
+      .item
+        i.icon.checkmark.checked
+        | transverse colon
+      .item
+        i.icon.checkmark.checked
+        | gallbladder
+      .item
+        i.icon.checkmark.checked
+        | diaphragm
+      .item
+        i.icon.checkmark.checked
+        | retractors
+      .item
+        i.icon.checkmark.checked
+        | suction tip
+      .item
+        i.icon.checkmark.checked
+        | distilled water
+
+block microscript
+  script.
+    $(".thumbnail.menu #04").addClass("active");

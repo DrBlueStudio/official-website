@@ -1,0 +1,43 @@
+extends _about
+
+block subtitle
+  | 關於這個網站
+
+block article
+  h1 關於這個網站
+  h2 網站設計者：Dr. Blue
+  p 本站的文字內容、視覺設計、以及網頁原始碼，皆由 Dr. Blue 醫學內容工作室規劃與執行。
+  p 如果您喜歡本站的風格，可以將我們的設計理念，應用在您自己的網站中。
+  h2 設計理念：重視易讀性與功能性
+  p
+    span.bold 讓讀者看懂內容，是第一要務
+    | 所以，字體要夠大，排版要有條有理，力求清晰易讀。頁面上不放多餘的裝飾動畫，選單按鈕則盡量顯眼，擺在固定的地方。
+  p
+    span.bold 讓讀者可以順暢的瀏覽，是第二要務
+    | 所以，原始碼力求簡潔，網站檔案大小力求精簡，圖片壓縮成最佳尺寸，並且用 CSS 取代多餘的圖檔。
+  p
+    span.bold 讓搜尋引擎能夠順利的分析網頁，是第三要務
+    | 所以，每頁設定適當的 title，使用正確的文件結構，並且設定好 meta 的關鍵字和網頁描述。
+  h2 網站的技術規格
+  p 這是一個純 html （沒有使用資料庫，以及其他伺服器技術）的網站，使用 Adobe Dreamweaver 製作。
+  p.ui.pointing.right.label.gray 所謂的純 html 網站，意思是說，這個網站的內容，如果要更動的話，必須直接改 html 的原始碼，而不能像部落格那樣從後台操作。
+  p 由於大量的使用 Dreamweaver 的巢狀樣板功能，只要修改樣板，相關的網頁就會自動更新，因此，全站 114 個頁面，可以很輕鬆的進行維護。
+  p 網頁的版面，皆採用 CSS 編排，而不使用舊式的 table。雖然外觀上看不出來，但是，簡潔的原始碼以及正確的文件結構，都有助於搜尋引擎排名的提升。
+  p.ui.pointing.right.label.gray 2010-9-19 新加入 Javascript 功能
+  p
+    | 頁面的動態效果，用 Javascript 與 jQuery 來達成，讓網頁的內容（html）、展現（CSS）、行為（Javascript）三者乾淨的分離開來。對於少數瀏覽器不支援 Javascript 的使用者，會少了一些導覽功能，但對於瀏覽網站內容並無妨礙。
+  h2 IE MUST DIE
+  p 許多視覺效果，在 ie 瀏覽器中看不到，這是因為，ie 是封閉的瀏覽器，不支援世界公認的網頁標準。
+  p
+    | 此外，ie 也是造成許多系統漏洞的程式，網路攻擊的頭號目標之一。強烈的建議您不要使用 ie，請改用自由開放、符合國際標準的
+    a(href='http://www.mozilla.com/', target='_blank') 火狐狸（Mozilla Firefox）
+    | 暢遊網路。
+  h2 備註
+  p
+    | 網站持續更新中，更新日期：
+    | 2010-09-19
+
+block script
+  script.
+    $("#navbar .about").addClass("active");
+    $(".vertical.menu #this_site").addClass("active");

@@ -1,0 +1,31 @@
+extends _processes
+
+block subtitle
+  block minititle
+  |  | 醫學繪圖
+
+block wrapper
+  nav.step.menu.processes
+    a.item.square(href="process-medical_illustration-prepare.html")#prepare 準備資料
+    .item.arrow 3-5 天
+    a.item.square(href="process-medical_illustration-estimate.html")#estimate 草圖、估價單
+    .item.arrow 5-14 天
+    a.item.square(href="process-medical_illustration-draft.html")#draft 初稿
+    .item.arrow 3-5 天
+    a.item.square(href="process-medical_illustration-correction.html")#correction 校稿
+    .item.arrow 3-5 天
+    a.item.square(href="process-medical_illustration-final.html")#final 完稿
+    a.item.square(href="process-medical_illustration-pay.html")#pay 付款
+    .item.arrow 確認款項後
+    a.item.square(href="process-medical_illustration-license.html")#license 授權
+    .item.arrow 結案後
+    a.item.square(href="process-medical_illustration-maintenance.html")#maintenance 維護
+  article.content.processes
+    block article
+
+block subscript
+  script.
+    $(".horizontal.menu #medical_illustration").addClass("active");
+    $("#navbar .services").attr("href","service-medical_illustration-whatis.html");
+    $("#navbar .prices").attr("href","price-medical_illustration-download.html");
+  block miniscript

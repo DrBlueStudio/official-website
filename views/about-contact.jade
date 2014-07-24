@@ -1,0 +1,50 @@
+extends _about
+
+block subtitle
+  | 寄信聯絡
+
+block article
+  h1 寄信聯絡
+  h2 您可以直接 e-mail 到工作室信箱
+  img(src='img/about/e-mail-icon-Dr.Blue.tw@gmail.com.png', width='158', height='21', alt='')
+  h2 或，填寫這個表單
+  p.subtitle
+    | 填寫時，按
+    span.keyboard Tab
+    | 鍵可以跳到下個欄位，按
+    span.keyboard space
+    | 鍵則可以將核取方塊勾選起來
+  form.ui.form.segment.gray(action='http://210.59.228.119/qform.asp?servername=etblue.idv.tw&serverid=7559', method='post', onsubmit='MM_validateForm("信件內容","","R");return document.MM_returnValue')
+    .inline.field
+      .ui.left.labeled.icon.input
+        input(name='您的大名', type='text', placeholder="您的大名")
+        i.icon.user
+    .inline.field
+      .ui.left.labeled.icon.input
+        input(name='單位與職稱', type='text', placeholder="單位與職稱")
+        i.icon.hospital
+    .inline.field
+      .ui.left.labeled.icon.input
+        input(name='E-mail', type='text', placeholder="E-mail")
+        i.icon.mail
+        .ui.corner.label.orange
+          i.icon.asterisk
+    //-.inline.field
+      .ui.checkbox
+        input(name='主題1', type='checkbox', value='訂製或購買作品', checked)
+        label 訂製或購買作品
+      .ui.checkbox
+        input(name='主題2', type='checkbox', value='諮詢與其他')
+        label 諮詢與其他
+    .field
+      .ui.input
+        textarea(name='信件內容', rows='10', placeholder="信件內容")
+        .ui.corner.label.orange
+          i.icon.asterisk
+    input(type='hidden', name='backurl', value='http://www.etblue.idv.tw/about-contact-success.htm')
+    input.ui.blue.submit.button(type='submit', name='submit', value='輸入完成，送出信件')
+
+block script
+  script.
+    $("#navbar .about").addClass("active");
+    $(".vertical.menu #contact").addClass("active");

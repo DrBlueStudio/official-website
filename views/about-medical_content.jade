@@ -1,0 +1,42 @@
+extends _about
+
+block subtitle
+  | 什麼是醫學內容
+
+block article
+  p.subtitle 產業範圍界定
+  h1 什麼是醫學內容
+  .picture
+    img(src='/img/about/medical_content.png', width='600', height='120', alt='')
+  h2 產業定義：醫療x內容
+  p 這裡所稱的醫學內容，指的是醫療產業與內容產業的交集區域。
+  p 概括而言，醫療產業包括了：
+  .ui.list
+    .item
+      i.icon.wrench
+      | 醫療製造，如醫療儀器、耗材、藥品等；
+    .item
+      i.icon.doctor
+      | 醫療服務，如醫院、診所、照護中心等；
+    .item
+      i.icon.chat
+      | 醫療教育，如醫學院、醫學研究所、繼續教育 ...等區塊。 
+  p 內容產業則包括了:
+  .ui.list
+    .item
+      i.icon.pencil
+      | 內容創作，如文章寫作、圖面繪製、影音製作等；
+    .item
+      i.icon.book
+      | 內容出版，如書籍印刷與上架、光碟製作、電子書出版等；
+    .item
+      i.icon.laptop
+      | 內容應用，如遊戲、互動模擬、數位典藏 ...等區塊。
+  p 以上兩者的交集區域，也就是我們所稱的醫學內容。
+  h2 工作室主軸：醫學內容創作
+  p 本工作室的主要服務項目，在於醫學內容的圖像創作，包括醫學繪圖、醫學動畫等。這些醫學內容的創作品，則應用在醫療產業的製造、服務、教育等各個區塊。
+
+block script
+  script.
+    $("#navbar .about").addClass("active");
+    $(".vertical.menu #medical_content").addClass("active");

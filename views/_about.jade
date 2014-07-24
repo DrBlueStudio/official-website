@@ -1,0 +1,32 @@
+extends _page
+
+block head
+  link(rel="stylesheet",href="css/about.css")
+
+block title
+  block subtitle
+  |  | 瞭解我
+
+block content
+
+  nav.horizontal.menu
+
+  .wrapper
+    nav.vertical.menu.about
+      a.item(href="about-medical_content.html")#medical_content 什麼是醫學內容
+      br
+      a.item(href="about-core_business.html")#core_business 兩個事業核心
+      br
+      a.item(href="about-positioning.html")#positioning 在醫療產業中的定位
+      br
+      //-a.item(href="about-this_site.html")#this_site 關於這個網站
+      //-br
+      a.item(href="about-me.html")#me 關於我
+      br
+      a.item(href="about-contact.html")#contact 寄信聯絡
+    article.content.about
+      block article
+
+block script
+  script.
+    $("#navbar .about").addClass("active");

@@ -1,0 +1,108 @@
+.wrapper .vertical.menu {
+  width: 198px;
+  height: 286px;
+  color: rgba(255, 255, 255, 0);
+  text-align: center;
+  background: url("/img/gallery/off.png");
+  position: absolute;
+}
+.wrapper .vertical.menu .item {
+  display: block;
+}
+.wrapper .vertical.menu .item:before {
+  content: "";
+  background-image: url("/img/gallery/on.png");
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.wrapper .vertical.menu .item.active:before, .wrapper .vertical.menu .item.active:hover:before {
+  opacity: 1;
+}
+.wrapper .vertical.menu .item:hover:before {
+  opacity: 0.8;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.wrapper .vertical.menu .item#head {
+  height: 46px;
+}
+.wrapper .vertical.menu .item#head:before {
+  background-position: 0 0;
+}
+.wrapper .vertical.menu .item#trunk {
+  height: 91px;
+}
+.wrapper .vertical.menu .item#trunk:before {
+  background-position: 0 -46px;
+}
+.wrapper .vertical.menu .item#limb {
+  height: 118px;
+}
+.wrapper .vertical.menu .item#limb:before {
+  background-position: 0 -137px;
+}
+.wrapper .vertical.menu .item#other {
+  height: 31px;
+}
+.wrapper .vertical.menu .item#other:before {
+  background-position: 0 -255px;
+}
+.wrapper .thumbnail.menu {
+  text-align: center;
+  background-color: #fafafa;
+  border: 1px #666666 solid;
+  border-width: 1px 0;
+  margin-left: 13rem;
+  height: 3rem;
+}
+.wrapper .thumbnail.menu .item {
+  display: inline-block;
+  border: 1px #cccccc solid;
+  border-width: 0 1px;
+  background-color: white;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+}
+.wrapper .thumbnail.menu .item:hover {
+  border-color: black;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+.wrapper .thumbnail.menu .item.active, .wrapper .thumbnail.menu .item.active:hover {
+  border-color: #cccccc;
+  -webkit-box-shadow: 0 3px 0 #8a73e6, 0 -3px 0 #8a73e6;
+  -moz-box-shadow: 0 3px 0 #8a73e6, 0 -3px 0 #8a73e6;
+  box-shadow: 0 3px 0 #8a73e6, 0 -3px 0 #8a73e6;
+}
+.wrapper .thumbnail.menu .item img {
+  max-height: 3rem;
+}
+.wrapper .portfolio {
+  margin-left: 13rem;
+  padding: 2rem;
+}
+.wrapper .portfolio .picture {
+  position: relative;
+  padding: 0.5rem;
+  background-color: #efefef;
+  margin-bottom: 1rem;
+}
+.wrapper .portfolio .picture .ui.label.ribbon {
+  position: absolute;
+  z-index: 1;
+  left: -1.2rem;
+  top: 1rem;
+  font-size: 1rem;
+}
+.wrapper .portfolio .picture .ui.attached.label {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}

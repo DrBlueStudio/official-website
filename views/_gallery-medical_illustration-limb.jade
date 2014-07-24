@@ -1,0 +1,20 @@
+extends _gallery-medical_illustration
+
+block minititle
+  | 四肢
+
+block category
+  nav.thumbnail.menu
+    a.item(href="gallery-medical_illustration-limb-01.html")#01
+      img(src="img/gallery/illustration/limb/01-01.jpg")
+    a.item(href="gallery-medical_illustration-limb-02.html")#02
+      img(src="img/gallery/illustration/limb/02-01.jpg")
+  article.portfolio
+    .ui.two.column.stackable.grid
+      block article
+
+block miniscript
+  script.
+    $(".vertical.menu #limb").addClass("active");
+  block microscript
+

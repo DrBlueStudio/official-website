@@ -1,0 +1,47 @@
+.wrapper .step.menu {
+  text-align: center;
+  background-color: #fafafa;
+  border: 1px #666666 solid;
+  border-width: 1px 0;
+}
+.wrapper .step.menu .item {
+  display: inline-block;
+  padding: 0.5em 0.8em;
+}
+.wrapper .step.menu .item.square {
+  border: 1px #cccccc solid;
+  border-width: 0 1px;
+  padding-left: 1em;
+  background-color: white;
+}
+.wrapper .step.menu .item.square:first-child {
+  padding-left: 0.5em;
+}
+.wrapper .step.menu .item.square:hover {
+  color: black;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), 0 1px 0 black, 0 -1px 0 black;
+  -moz-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), 0 1px 0 black, 0 -1px 0 black;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), 0 1px 0 black, 0 -1px 0 black;
+}
+.wrapper .step.menu .item.square.active, .wrapper .step.menu .item.square.active:hover {
+  color: black;
+  -webkit-box-shadow: 0 3px 0 #00a0c6, 0 -3px 0 #00a0c6;
+  -moz-box-shadow: 0 3px 0 #00a0c6, 0 -3px 0 #00a0c6;
+  box-shadow: 0 3px 0 #00a0c6, 0 -3px 0 #00a0c6;
+}
+.wrapper .step.menu .item.arrow {
+  position: relative;
+  background-color: #eeeeee;
+}
+.wrapper .step.menu .item.arrow:after {
+  content: "";
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  background: #eeeeee url("/img/process/arrow.png") no-repeat right center;
+}
+.wrapper .content {
+  margin: 1rem 3rem 0 3rem;
+}

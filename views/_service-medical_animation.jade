@@ -1,0 +1,22 @@
+extends _services
+
+block subtitle
+  block minititle
+  |  | 醫學動畫
+
+block wrapper
+  nav.vertical.menu.services
+    a.item(href="service-medical_animation-whatis.html")#whatis 什麼是醫學動畫
+    a.item(href="service-medical_animation-produce.html")#produce 醫學動畫如何製作
+    a.item(href="service-medical_animation-indication.html")#indication 哪些人需要我們的服務
+    a.item(href="service-medical_animation-order.html")#order 如何訂製或購買醫學動畫
+  article.content.services
+    block article
+
+block subscript
+  script.
+    $(".horizontal.menu #medical_animation").addClass("active");
+    $("#navbar .prices").attr("href","price-medical_animation-download.html");
+    $("#navbar .processes").attr("href","process-medical_animation-prepare.html");
+  block miniscript
+

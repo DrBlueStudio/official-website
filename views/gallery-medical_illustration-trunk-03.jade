@@ -1,0 +1,50 @@
+extends _gallery-medical_illustration-trunk
+
+block article
+  .column
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 醫學繪圖小型
+      img(src="img/gallery/illustration/trunk/03-01.jpg")
+      .ui.bottom.attached.label Seton Procedure for Anal Fistula
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 醫學系列圖小型
+      img(src="img/gallery/illustration/trunk/03-02.jpg")
+      .ui.bottom.attached.label Post-op: Seton Tied with Tension
+  .column
+    h1 肛門瘻管seton手術術式說明
+    p 使用場合：醫學論文插圖
+    p 學術分類：一般外科
+    .ui.celled.list
+      .item
+        i.icon.checkmark.checked
+        | high anal fistula
+      .item
+        i.icon.checkmark.checked
+        | anus
+      .item
+        i.icon.checkmark.checked
+        | anal rectal line
+      .item
+        i.icon.checkmark.checked
+        | internal sphincter muscle
+      .item
+        i.icon.checkmark.checked
+        | external sphincter muscle (deep, superficial, subcutaneous)
+      .item
+        i.icon.checkmark.checked
+        | internal and external rectal venous plexus
+      .item
+        i.icon.checkmark.checked
+        | one hand of surgeon
+      .item
+        i.icon.checkmark.checked
+        | seton
+      .item
+        i.icon.checkmark.checked
+        | forcep
+      .item
+        i.icon.checkmark.checked
+        | silk tie
+block microscript
+  script.
+    $(".thumbnail.menu #03").addClass("active");

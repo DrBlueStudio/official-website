@@ -1,0 +1,36 @@
+extends _processes
+
+block subtitle
+  block minititle
+  |  | 醫學動畫
+
+block wrapper
+  nav.step.menu.processes
+    a.item.square(href="process-medical_animation-prepare.html")#prepare 準備資料
+    .item.arrow 5-7 天
+    a.item.square(href="process-medical_animation-script.html")#script 腳本
+    a.item.square(href="process-medical_animation-deposit.html")#deposit 定金
+    .item.arrow 7-14 天
+    a.item.square(href="process-medical_animation-animated_script.html")#animated_script 動態腳本
+    .item.arrow 5-14 天
+    a.item.square(href="process-medical_animation-picture.html")#picture 靜畫草稿
+    .item.arrow 5-14 天
+    a.item.square(href="process-medical_animation-draft.html")#draft 動畫初稿
+    .item.arrow 3-7 天
+    a.item.square(href="process-medical_animation-correction.html")#correction 動畫校稿
+    .item.arrow 3-7 天
+    a.item.square(href="process-medical_animation-final.html")#final 動畫完稿
+    a.item.square(href="process-medical_animation-pay.html")#pay 付款
+    .item.arrow 確認款項後
+    a.item.square(href="process-medical_animation-license.html")#license 授權
+    .item.arrow 結案後
+    a.item.square(href="process-medical_animation-maintenance.html")#maintenance 維護
+  article.content.processes
+    block article
+
+block subscript
+  script.
+    $(".horizontal.menu #medical_animation").addClass("active");
+    $("#navbar .services").attr("href","service-medical_animation-whatis.html");
+    $("#navbar .prices").attr("href","price-medical_animation-download.html");
+  block miniscript

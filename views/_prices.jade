@@ -1,0 +1,21 @@
+extends _page
+
+block title
+  block subtitle
+  |  | 收費
+
+block content
+
+  nav.horizontal.menu.prices
+    a.item(href="price-medical_illustration-download.html")#medical_illustration 醫學繪圖
+    a.item(href="price-medical_animation-download.html")#medical_animation 醫學動畫
+    a.item(href="price-medical_graphic-download.html")#medical_graphic 醫學平面設計
+
+  .wrapper
+    block wrapper
+
+block script
+  script.
+    $("#navbar .prices").addClass("active");
+  block subscript
+

@@ -1,0 +1,24 @@
+extends _page
+
+block head
+  link(rel="stylesheet",href="css/processes.css")
+
+block title
+  block subtitle
+  |  | 收費
+
+block content
+
+  nav.horizontal.menu.processes
+    a.item(href="process-medical_illustration-prepare.html")#medical_illustration 醫學繪圖
+    a.item(href="process-medical_animation-prepare.html")#medical_animation 醫學動畫
+    a.item(href="process-medical_graphic-prepare.html")#medical_graphic 醫學平面設計
+
+  .wrapper
+    block wrapper
+
+block script
+  script.
+    $("#navbar .processes").addClass("active");
+  block subscript
+

@@ -1,0 +1,19 @@
+extends _gallery-medical_illustration-other
+
+block article
+  .column
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 機械圖 L
+      img(src="img/gallery/illustration/other/02-01.jpg")
+      //-.ui.bottom.attached.label 
+  .column
+    h1 遠紅外線儀器組裝說明圖
+    p 使用場合：醫療器材產品說明書插圖
+    p 學術分類：無
+    //-.ui.celled.list
+      .item
+        i.icon.checkmark.checked
+
+block microscript
+  script.
+    $(".thumbnail.menu #02").addClass("active");

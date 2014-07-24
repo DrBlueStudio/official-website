@@ -1,0 +1,24 @@
+extends _gallery-medical_illustration
+
+block minititle
+  | 頭頸部
+
+block category
+  nav.thumbnail.menu
+    a.item(href="gallery-medical_illustration-head-01.html")#01
+      img(src="img/gallery/illustration/head/01-01.jpg")
+    a.item(href="gallery-medical_illustration-head-02.html")#02
+      img(src="img/gallery/illustration/head/02-01.jpg")
+    a.item(href="gallery-medical_illustration-head-03.html")#03
+      img(src="img/gallery/illustration/head/03-01.jpg")
+    a.item(href="gallery-medical_illustration-head-04.html")#04
+      img(src="img/gallery/illustration/head/04-01.jpg")
+  article.portfolio
+    .ui.two.column.stackable.grid
+      block article
+
+block miniscript
+  script.
+    $(".vertical.menu #head").addClass("active");
+  block microscript
+

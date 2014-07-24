@@ -1,0 +1,277 @@
+@import compass/css3
+
+// glabal
+
+html
+  font-size: 16px
+  font-family: '微軟正黑體', sans-serif
+  color: #333
+
+input::-webkit-input-placeholder
+  font-family: '微軟正黑體', sans-serif
+
+body
+  margin: 0
+  padding: 0
+
+h1,h2,h3,h4
+  margin: 0
+  padding: 0
+  line-height: 1em
+
+a
+  color: inherit
+  text-decoration: none
+  &:hover
+    +transition-duration(0.2s)
+
+p
+  line-height: 1.5em
+  letter-spacing: 0.1em
+
+.hidden
+  display: none
+
+.clearfix
+  clear: both
+
+.keyboard
+  padding: 0 3px
+  border: #999 1px solid
+  margin: 0 0.3em
+  +border-radius(3px)
+  +box-shadow(1px 1px 2px rgba(0, 0, 0, 0.5))
+
+.ui.pointing.label
+  font-size: 0.8em
+  &.gray
+    background-color: #efefef
+    &:before
+      background-color: #efefef
+  &.light
+    background-color: #fafafa
+    &:before
+      background-color: #fafafa
+
+// layout
+
+#wrapper
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+  +box-sizing(border-box)
+
+#navbar
+  margin: 2rem 0 3.5rem 0
+  .item
+    height: 48px
+    width: 90px
+    display: inline-block
+    color: rgba(#333,0)
+    margin-left: 0.2rem
+    &.news
+      background-image: url("/img/menu/news/off.png")
+      &:hover,&.active
+        background-image: url("/img/menu/news/on.png")
+    &.about
+      background-image: url("/img/menu/about/off.png")
+      &:hover,&.active
+        background-image: url("/img/menu/about/on.png")
+    &.gallery
+      background-image: url("/img/menu/gallery/off.png")
+      &:hover,&.active
+        background-image: url("/img/menu/gallery/on.png")
+    &.services
+      background-image: url("/img/menu/services/off.png")
+      &:hover,&.active
+        background-image: url("/img/menu/services/on.png")
+    &.prices
+      background-image: url("/img/menu/prices/off.png")
+      &:hover,&.active
+        background-image: url("/img/menu/prices/on.png")
+    &.processes
+      background-image: url("/img/menu/processes/off.png")
+      &:hover,&.active
+        background-image: url("/img/menu/processes/on.png")
+    &.contact
+      float: right
+      background-image: url("/img/menu/contact/off.png")
+      &:hover,&.active
+        background-image: url("/img/menu/contact/on.png")
+    &.home
+      margin-left: 0
+      margin-right: 0.5rem
+      width: 290px
+      background-image: url("/img/menu/home/on.png")
+      opacity: 0.7
+      &:hover,&.active
+        opacity: 1
+
+#footer
+  margin-top: 4rem
+  border-top: 1px #000 solid
+  padding: 0 1rem
+  clear: both
+  a
+    text-decoration: underline
+    &:hover
+      background-color: efefef
+  p
+    font-size: 0.9rem
+    line-height: 2em
+    letter-spacing: .05em
+    padding: 0
+    .group
+      display: inline-block
+      margin-right: 0.5rem
+      &:after
+        content: "、"
+      &:last-child:after
+        content: "。"
+
+// content area
+
+.horizontal.menu
+  min-height: 2rem
+  overflow-y: hidden
+  .item
+    display: inline-block
+    margin-right: 1rem
+    padding: 0.5em 0.7em 0.3em 0.7em
+    border: #ccc solid
+    border-width: 1px 1px 0 1px
+    +border-radius(9px 9px 0 0)
+    &:hover
+      color: #000
+      border-color: #000
+      +box-shadow(0 0 5px rgba(0, 0, 0, 0.5))
+    &.active,&.active:hover
+      border-width: 3px 3px 0 3px
+      +box-shadow(none)
+  &.news
+    .item.active
+      border-color: #d9e021
+  &.services
+    .item.active
+      border-color: #cc3333
+  &.prices
+    .item.active
+      border-color: #b09000
+  &.processes
+    .item.active
+      border-color: #00a0c6
+  &.gallery
+    .item.active
+      border-color: #8a73e6
+
+.wrapper
+  margin-top: 2rem
+  position: relative
+
+  .vertical.menu
+    float: left
+    width: 15rem
+    text-align: right
+    .item
+      position: relative
+    &.news,&.services,&.prices
+      .item
+        display: block
+        padding: 0.8em 0
+        border-top: 1px dotted #ccc
+        color: #999
+        &:hover,&.active
+          color: #000
+          +transition-duration(0.2s)
+        &.active
+          &:before
+            content: ""
+            position: absolute
+            width: 0
+            height: 0
+            border-top: 6px rgba(#fff,0) solid
+            border-bottom: 6px rgba(#fff,0) solid
+            right: -16px
+            top: 40%
+          &:after
+            content: ""
+            position: absolute
+            height: 80%
+            width: 4px
+            right: -10px
+            top: 10%
+      .timestamp
+        font-size: 0.75em
+        margin-left: 0.5rem
+    &.news .item.active
+      &:after
+        background-color: #d9e021
+      &:before
+        border-left: 6px rgba(#d9e021,1) solid
+    &.services .item.active
+      &:after
+        background-color: #cc3333
+      &:before
+        border-left: 6px rgba(#cc3333,1) solid
+    &.prices .item.active
+      &:after
+        background-color: #b09000
+      &:before
+        border-left: 6px rgba(#b09000,1) solid
+
+  .content
+    font-size: 1.2rem
+    margin-left: 19rem
+    margin-right: 3rem
+    h1
+      font-size: 1.5em
+      color: #666
+      border-bottom: #ccc 2px dotted
+      padding: 1rem 0
+      margin-bottom: 2rem
+    h2
+      font-size: 1.2em
+      color: #217082
+      margin: 2rem 0
+    a
+      padding: 0.2em 0.5em
+      +border-radius(0.3rem)
+      &:link
+        border-bottom: 1px #ccc dashed
+      &:hover
+        color: #000
+        background-color: #fff
+        +box-shadow(0 0 1px rgba(#000,1))
+    p
+      &.rss a
+        font-size: large
+        padding: 5px
+        margin: 5px
+        color: #666
+        text-decoration: none
+        border-bottom: 1px dashed #999
+    .bold
+      padding: 0.2em 0.5em
+      margin: 0 0.5em
+      font-weight: bold
+      border: 1px #ccc dotted
+      +border-radius(0.3rem)
+    .timestamp,.subtitle
+      color: #333
+      font-weight: normal
+      margin: 0
+      font-size: 0.9rem
+    .sign
+      font-size: 0.9rem
+      text-align: right
+      margin-top: 2rem
+      border-top: 1px dotted #CCC
+    &.news
+      padding: 2rem 3rem
+      background-color: rgba(#000,0.05)
+      +border-radius(0.5rem)
+      .bold
+        background-color: #fff
+    &.about,&.services,&.prices,&.processes
+      .bold
+        background-color: rgba(#000,0.05)

@@ -1,0 +1,31 @@
+extends _service-medical_graphic
+
+block minititle
+  | 什麼是醫學平面設計
+
+block article
+  p.subtitle 對現有圖文進行編排
+  h1 什麼是醫學平面設計
+  div
+    img(src='img/services/medical_graphic.png', width='600', height='120', alt='')
+  h2 醫學內容的整體呈現
+  p 把醫學文章、圖表、插圖，進行編排整理，變成最終可以拿到觀眾眼前的東西，就是所謂的醫學平面設計。像這樣：
+  //-div
+    img(src='images/med-graphic-pre.png', width='250', height='180', alt='', style='border: 1px #ccc dashed;')
+    p 編排前，是一份文件檔案。
+  //-div
+    img(src='images/med-graphic-post.png', width='250', height='180', alt='', style='border: 1px #ccc dashed;')
+    p 編排後，變成一張海報圖檔。
+  h2 醫學平面設計應用在哪些地方
+  p
+    span.bold 大型設計品
+    | 如醫學海報，通常出現在專科年會、學術研討會，用來展示新出爐的學術論文。
+  p
+    span.bold 小型設計品
+    | 如醫學文宣，通常出現在醫療院所，用來向病人解釋治療上的常見問題。
+  p
+    img(src='img/under-construction-small.png', width='323', height='64', alt='')
+
+block miniscript
+  script.
+    $(".vertical.menu #whatis").addClass("active");

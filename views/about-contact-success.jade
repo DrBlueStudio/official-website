@@ -1,0 +1,14 @@
+extends _about
+
+block subtitle
+  | 寄信聯絡：成功
+
+block article
+  h1 寄信聯絡……
+  h2 您的表單已經送出了！
+  p 很高興認識您，我們將在一至三天內回覆 :-)
+
+block script
+  script.
+    $("#navbar .about").addClass("active");
+    $(".vertical.menu #contact").addClass("active");

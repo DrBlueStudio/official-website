@@ -1,0 +1,18 @@
+extends _gallery-medical_illustration-head
+
+block article
+  .column
+    .picture.rounded.ui.image
+      .ui.label.ribbon.blue 醫學繪圖中型
+      img(src="img/gallery/illustration/head/02-01.jpg")
+  .column
+    h1 顴骨解剖構造
+    p 使用場合：手術室書籍出版印刷刊物
+    p 學術分類：口腔顎面外科
+    .ui.celled.list
+      //-.item
+        i.icon.checkmark.checked
+        | 
+block microscript
+  script.
+    $(".thumbnail.menu #02").addClass("active");

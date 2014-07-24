@@ -1,0 +1,14 @@
+extends _price-medical_animation
+
+block minititle
+  | 下載價格表
+
+block article
+  h1 下載價格表
+  p: a(href="https://www.dropbox.com/s/fwshs8ewpf3mt0n/Dr.Blue-Medical-Content-Studio-PriceList-illustration-animation-design-2014.pdf")
+    i.icon.download.disk
+    | 2014 年醫學繪圖暨機械繪圖、醫學動畫、醫學平面設計綜合價目表
+
+block miniscript
+  script.
+    $(".vertical.menu #download").addClass("active");

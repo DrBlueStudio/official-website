@@ -1,0 +1,21 @@
+extends _page
+
+block title
+  block subtitle
+  |  | 服務項目
+
+block content
+
+  nav.horizontal.menu.services
+    a.item(href="service-medical_illustration-whatis.html")#medical_illustration 醫學繪圖
+    a.item(href="service-medical_animation-whatis.html")#medical_animation 醫學動畫
+    a.item(href="service-medical_graphic-whatis.html")#medical_graphic 醫學平面設計
+    a.item(href="service-medical_content_lab-why.html")#medical_content_lab 實驗計劃
+
+  .wrapper
+    block wrapper
+
+block script
+  script.
+    $("#navbar .services").addClass("active");
+  block subscript

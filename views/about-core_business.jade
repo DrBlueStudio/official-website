@@ -1,0 +1,42 @@
+extends _about
+
+block subtitle
+  | 兩個事業核心
+
+block article
+  p.subtitle 醫學內容創作方向
+  h1 兩個事業核心
+  .picture
+    img(src='img/about/core_business.png', width='600', height='120', alt='')
+  h2 醫學內容的創作方向：整合跨領域知識
+  p Dr. Blue 的核心業務，在於跨領域知識的整合應用。橫跨的領域為：醫學與牙醫學、電腦製圖、視覺傳達、商業管理。其中：
+  p
+    span.bold 電腦製圖
+    | 意指關於電腦軟體的技術與知識，如商業軟體 Adobe Creative Suite，或者自由軟體
+    a(href='http://zh.openoffice.org/new/zh_tw/index.html', target='_blank') OpenOffice.org Draw（文書製圖）
+    | 、
+    a(href='http://www.debugmode.com/wink/', target='_blank') Wink（螢幕錄製與剪接）
+    | 、
+    a(href='http://fixounet.free.fr/avidemux/', target='_blank') Avidemux（影片剪輯）
+    | 等。
+  p
+    span.bold 視覺傳達
+    | 包括素描、插畫、動畫、剪接與後製、版面編排與平面設計、企業識別設計、html 與 CSS 網頁設計、以及網站 SEO （search engine optimization，搜尋引擎最佳化）等相關知識。
+  p
+    span.bold 商業管理
+    | 則包含策略制定、流程管理、專案管理、企劃與提案、專案執行、行政與日常營運等相關知識。
+  h2
+    | 第一事業核心：醫學繪圖
+    span.subtitle （醫學知識的數位內容創作）
+  p 醫學數位內容創作，是「醫學、電腦製圖、視覺傳達」這三類知識的跨領域應用。使用電腦繪圖的方式，製作插畫和動畫，而這些作品的主題，是在傳遞醫學和牙醫學的專業知識。
+  p 簡單的說，我們的第一項事業核心，就是醫學繪圖以及醫學動畫。目前，工作室的主要營收，來自於此。
+  h2
+    | 第二事業核心：醫管工具
+    span.subtitle （醫療管理輔助工具的設計）
+  p 醫療管理工具設計，是「醫學、視覺傳達、商業管理」這三類知識的跨領域應用，包括臨床醫療作業的表單設計、標準作業流程設計與相關的文件繪製。
+  p 目前，這項業務仍在實驗階段，未來，考慮以創用CC的方式分享作品，或者提供相關的顧問服務。
+
+block script
+  script.
+    $("#navbar .about").addClass("active");
+    $(".vertical.menu #core_business").addClass("active");

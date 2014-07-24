@@ -1,0 +1,26 @@
+extends _gallery-medical_illustration
+
+block minititle
+  | 軀幹部
+
+block category
+  nav.thumbnail.menu
+    a.item(href="gallery-medical_illustration-trunk-01.html")#01
+      img(src="img/gallery/illustration/trunk/01-01.jpg")
+    a.item(href="gallery-medical_illustration-trunk-02.html")#02
+      img(src="img/gallery/illustration/trunk/02-01.jpg")
+    a.item(href="gallery-medical_illustration-trunk-03.html")#03
+      img(src="img/gallery/illustration/trunk/03-01.jpg")
+    a.item(href="gallery-medical_illustration-trunk-04.html")#04
+      img(src="img/gallery/illustration/trunk/04-01.jpg")
+    a.item(href="gallery-medical_illustration-trunk-05.html")#05
+      img(src="img/gallery/illustration/trunk/05-01.jpg")
+  article.portfolio
+    .ui.two.column.stackable.grid
+      block article
+
+block miniscript
+  script.
+    $(".vertical.menu #trunk").addClass("active");
+  block microscript
+

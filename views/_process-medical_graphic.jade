@@ -1,0 +1,32 @@
+extends _processes
+
+block subtitle
+  block minititle
+  |  | 醫學平面設計
+
+block wrapper
+  nav.step.menu.processes
+    a.item.square(href="process-medical_graphic-prepare.html")#prepare 準備資料
+    .item.arrow 5-7 天
+    a.item.square(href="process-medical_graphic-estimate.html")#estimate 估價單
+    a.item.square(href="process-medical_graphic-deposit.html")#deposit 定金
+    .item.arrow 5-14 天
+    a.item.square(href="process-medical_graphic-draft.html")#draft 初稿
+    .item.arrow 3-5 天
+    a.item.square(href="process-medical_graphic-correction.html")#correction 校稿
+    .item.arrow 3-5 天
+    a.item.square(href="process-medical_graphic-final.html")#final 完稿
+    .item.arrow 3-7 天
+    a.item.square(href="process-medical_graphic-print.html")#print 輸出
+    a.item.square(href="process-medical_graphic-pay.html")#pay 付款
+    .item.arrow 結案後
+    a.item.square(href="process-medical_graphic-maintenance.html")#maintenance 維護
+  article.content.processes
+    block article
+
+block subscript
+  script.
+    $(".horizontal.menu #medical_graphic").addClass("active");
+    $("#navbar .services").attr("href","service-medical_graphic-whatis.html");
+    $("#navbar .prices").attr("href","price-medical_graphic-download.html");
+  block miniscript
