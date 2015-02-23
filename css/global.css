@@ -1,0 +1,107 @@
+@charset "UTF-8";
+html, body {
+  font-family: "Noto Sans", "Noto Sans T Chinese", "微軟正黑體", sans-serif;
+  color: #333333;
+  font-size: 20px;
+}
+
+html, body, div, nav, section, article, header, footer, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: whitesmoke;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+a, a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.no.margin {
+  margin: 0;
+}
+
+.float.right {
+  float: right;
+}
+
+.float.left {
+  float: left;
+}
+
+.align.center {
+  text-align: center;
+}
+
+.clear.both {
+  clear: both;
+}
+
+.page.wrapper {
+  max-width: 960px;
+  min-width: 480px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.desktop, .laptop, .tablet, .phone {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .desktop {
+    display: initial;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 840px) {
+  .laptop {
+    display: initial;
+  }
+}
+@media screen and (max-width: 840px) and (min-width: 560px) {
+  .tablet {
+    display: initial;
+  }
+}
+@media screen and (max-width: 560px) {
+  .phone {
+    display: initial;
+  }
+}
+body {
+  background-image: url(../img/2015bg.png);
+}
+
+#landing {
+  padding-top: 2rem;
+}
+
+#door {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #fefefe;
+  -moz-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+#card {
+  padding: 1rem 2rem 1rem 2.5rem;
+  letter-spacing: 0.5em;
+  font-size: 1.5rem;
+}
+
+#paper {
+  text-align: left;
+}
